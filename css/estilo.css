@@ -120,3 +120,11 @@ footer{
 	text-align: center;
 }
 
+/*Uso de mediaqueries*/
+@media screen and (max-width: 800px){
+	.main{
+		width: 100%;
+		font-size: 12px;
+		background: greenyellow;
+	}
+}

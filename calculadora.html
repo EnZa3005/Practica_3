@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1-0">
+	<title>CALCULADORA</title>
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+	<style>
+		.main .ref{
+			width: 100%;
+			background-image: url(imagenes/cal.jpg);
+			background-position-x: center;
+			background-position-y: center;
+			background-repeat: no-repeat;
+			background-size: 400px;
+		}
+		form p{
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 30px;
+		}
+		input[type="text"]{
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 20px;
+			text-align: center;
+		}
+		form .btn{
+			width: 100%;
+			background: lightgreen;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+			text-align: center;
+			padding: 20px;
+			display: inline-block;
+			text-decoration: none;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="calculadora.html">CALCULADORA</a></li>
+					<li><a href="registrarse.html">REGISTRARSE</a></li>
+					<li><a href="#">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="main">
+			<div class="imagen">
+				<h2>Calculadora</h2>
+				<p>El siguiente formulario realiza las acciones de una calculadora</p>
+				
+			</div>
+			<section class="ref">
+				<article>
+					<form action="">
+						<input type="text" id="numero1">
+						<br>
+						<p>+</p>
+						<br>
+						<input type="text" id="numero2">
+						<br>
+						<p>=</p>
+						<br>
+						<input type="text" id="resultado" readonly>
+						<br>
+						<input type="buttom" onclick="suma()" class="btn" value="Obtener resultado">
+					</form>
+					<p>En construccion</p>
+				</article>
+			</section>
+		</section>
+		<aside>
+			<div class="lateral">
+				<h3 class="class">Proximas salidas</h3>
+				<ul>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+					<li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+				</ul>
+			</div>
+			<div class="lateral">
+				<h3 class="class">Informacion</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</aside>
+		<footer>
+			<p>Victor Gutierrez -Derechos reservados-</p>
+		</footer>
+	</div>
+
+<script src="js/acciones.js"></script>
+
+</body>
+</html>

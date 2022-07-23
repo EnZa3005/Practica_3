@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <!DOCTYPE html>
@@ -8,6 +9,102 @@
 	<title>REGISTRARSE</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<style>
+		.caja{
+			background: black;
+			font-family: fantasy;
+			font-size: 18px;
+			width: 80%;
+			margin: 40px;
+		}
+
+		.formulario .caja-inputs{
+			padding: 20px;
+			background: lightgray;
+			border-radius: 6px 6px 0 0;
+		}
+
+		.formulario input[type="text"], .formulario inputs[type="correo"]{
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 15px 10px;
+			border: none;
+			border-bottom: 2px solid #ccc;
+			font-family: fantasy;
+			font-size: 13px;
+		}
+
+		.formulario input[type="text"]:focus, .formulario input[type="correo"]:focus{
+			border-bottom: 5px solid #246eb9;
+		}
+
+		.formulario input[type="radio"]{
+			display: none;
+		}
+
+		.formulario .sexo{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.formulario .sex .hombre{
+			border-radius: 5px 0 0 5px;
+		}
+
+		.formulario .sex .mujer{
+			border-radius: 0 5px 5px 0;
+		}
+
+		.formulario .label-radio{
+			background: #BF213E;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			width: 49%;
+		}
+
+		.formulario input[type="radio"]:checked + .label-radio{
+			background: #32378C;
+		}
+
+		.formulario .terminos{
+			text-align: center;
+			color: black;
+		}
+
+		.formulario .terminos label{
+			margin-left: 10px;
+		}
+		.formulario .error{
+			display: none;
+			margin-top: 20px;
+			border-radius: 3px;
+			background: black;
+			color: white;
+			padding: 15px 10px;
+			padding-left: 40px;
+		}
+
+		.formulario .btn{
+			width: 100%;
+			text-align: center;
+			background: #BF213E;
+			color: white;
+			border: none;
+			display: block;
+			padding: 15px 10px;
+			cursor: pointer;
+			border-radius: 0 0 6px 6px;
+			font-family: fantasy;
+			font-size: 18px;
+		}
+
+		.formulario .btn:hover {
+			background: #32378C;
+		}
+
 	</style>
 </head>
 <body>
@@ -23,10 +120,28 @@
 			</nav>
 		</header>
 		<section class="main">
-			<div class="imagen">
-				<h2>CALCULADORA</h2>
-				<p>El siguiente formulacio hace operaciones</p>
+
+			<div class="caja">
+				<form action="" class="formulario" id="formulario" name="formulario">
+					<div class="caja-inputs">
+						<input type="text" name="nombre" placeholder="nombre">
+						<input type="text" name="correo" placeholder="norreo">
+						<div class="sexo">
+							<input type="radio" name="sexo" id="hombre" value="nombre">
+							<label class="label-radio hombre" for="hombre">Hombre</label>
+							<input type="radio" name="sexo" id="mujer" value="mujer">
+							<label class="label-radio mujer" for="mujer">Mujer</label>
+						</div>
+						<div class="terminos">
+							<input type="checkbox" name="terminos" id="terminos">
+							<label for="terminos">Acepto los terminos y condiciones</label>
+						</div>
+						<ul class="error" id="error"></ul>
+					</div>
+					<input type="submit" class="btn" value="registrarse">
+				</form>
 			</div>
+
 		</section>
 		<aside>
 			<div class="lateral">
@@ -48,5 +163,6 @@
 			<p>ENRIQUE ZAVALA ACOSTA ©</p>
 		</footer>
 	</div>
+<script src="js/acciones2.js"></script>
 </body>
 </html>
